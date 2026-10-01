@@ -19,28 +19,33 @@
 ### 1. 安装依赖
 ```bash
 pip install -e .
+```
 
-2. 下载模型文件
+### 2. 下载模型文件
 运行姿态提取前，请先下载 MediaPipe 模型：
 
-powershell
+```powershell
 Invoke-WebRequest -Uri "https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_full/float16/latest/pose_landmarker_full.task" -OutFile "pose_landmarker_full.task"
+```
 
-3. 镜像视频（fallback 模式）
-bash
+### 3. 镜像视频（fallback 模式）
+```bash
 python src\danceback\skills\mirror.py dance.mp4 practice.mp4
+```
 
-4. 提取 2D 姿态
-bash
+### 4. 提取 2D 姿态
+```bash
 python src\danceback\skills\extract_pose.py
 生成 pose_preview.jpg。
+```
 
-5. 启动 MCP Server
-bash
+### 5. 启动 MCP Server
+```bash
 python src\danceback\agent\mcp_server.py
+```
 
-目录结构
-text
+## 目录结构
+```text
 danceback-agent/
 ├── src/danceback/
 │   ├── skills/
@@ -51,8 +56,9 @@ danceback-agent/
 │       └── mcp_server.py      # MCP Server
 ├── pyproject.toml
 └── README.md
+```
 
-路线图
+## 路线图
 | 版本 | 目标 |
 |---|---|
 | v0.0.1 | 骨架 + 镜像占位 |
@@ -60,7 +66,7 @@ danceback-agent/
 | v0.2 | 3D 姿态提升 |
 | v0.3 | 背面数字人渲染 |
 
-说明
+## 说明
 - back_view 是主线，mirror 仅作 fallback。
 
 - 单目正面视频无法真实恢复背面细节，背面为推断结果。
@@ -69,5 +75,5 @@ danceback-agent/
 
 - 请勿上传未授权舞蹈视频和音乐。
 
-许可证
+## 许可证
 MIT
