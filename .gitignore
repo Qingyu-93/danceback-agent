@@ -219,3 +219,7 @@ __marimo__/
 *.mp4
 *.mov
 *.avi
+*.task
+pose_preview.jpg
+*.jpg
+*.png
