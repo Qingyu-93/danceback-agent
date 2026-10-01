@@ -226,3 +226,5 @@ pose_preview.jpg
 pose_3d.json
 pose_3d_back.json
 *.json
+tmp_frames/
+skeleton_back.mp4
