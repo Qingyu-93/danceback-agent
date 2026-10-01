@@ -11,7 +11,7 @@
 - [x] 占位 Skill：镜像（fallback）
 - [x] MCP Server 骨架（适配 mcp 2.x）
 - [x] 2D 姿态提取（MediaPipe Tasks API）
-- [ ] 3D 姿态提升（v0.2）
+- [x] 3D 姿态提升（v0.2）
 - [ ] 背面数字人渲染（v0.3）
 
 ## 快速开始
