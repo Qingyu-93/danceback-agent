@@ -224,3 +224,5 @@ pose_preview.jpg
 *.jpg
 *.png
 pose_3d.json
+pose_3d_back.json
+*.json
