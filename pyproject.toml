@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "danceback"
+version = "0.0.1"
+description = "把正面舞蹈视频转成背面跟练视角，并通过 MCP 集成到 AI Agent"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=2,<3",        # 明确要求 2.x
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
